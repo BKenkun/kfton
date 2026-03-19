@@ -2,42 +2,33 @@
 
 Este es el repositorio oficial de **kfton**, una plataforma de e-commerce y gestión integral para cafeterías de especialidad.
 
-## 🚀 Características Principales
+## 🚀 Guía de Lanzamiento (Producción)
 
-- **Tienda Online**: Venta de café y merchandising con integración de Stripe.
-- **Panel de Administración**: Gestión de productos, pedidos, carta, horarios y reseñas.
-- **Gestión de Medios**: Subida de vídeos e imágenes para la sección Héroe y productos (almacenamiento local).
-- **Dashboard de Analíticas**: Visualización de ventas y alertas de stock bajo.
-- **Optimización**: SEO dinámico, Sitemap y Robots.txt.
+Para poner la web en funcionamiento después de clonar o desplegar:
+
+1. **Despliegue**: Conecta este repositorio a tu servicio de hosting preferido (recomendado Firebase App Hosting).
+2. **Acceso Admin**: Ve a `https://tu-dominio.com/admin/login`.
+   - *User*: `santicoffewinks`
+   - *Pass*: `DXE$%&78iKNMl`
+3. **Configuración de Stripe**:
+   - Entra en la pestaña **Ajustes**.
+   - Introduce tu `Secret Key` y `Publishable Key` de Stripe.
+   - Esto habilitará la tienda y la sincronización de productos automáticamente.
+4. **Gestión de Medios**: Sube tus imágenes y vídeos directamente desde el panel. Se almacenarán en el servidor para máxima velocidad.
 
 ## 🛠️ Tecnologías
 
-- **Framework**: Next.js 15 (App Router)
-- **UI**: React 18, Tailwind CSS, ShadCN UI
+- **Framework**: Next.js 15.5.7 (App Router)
+- **UI**: React 18.3.1, Tailwind CSS, ShadCN UI
 - **IA**: Genkit para funcionalidades inteligentes.
-- **Pagos**: Stripe API.
-- **Hosting**: Firebase App Hosting.
-
-## 📦 Instalación
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/BKenkun/kfton.git
-   ```
-2. Instala dependencias:
-   ```bash
-   npm install
-   ```
-3. Ejecuta en desarrollo:
-   ```bash
-   npm run dev
-   ```
+- **Pagos**: Stripe API (Gestión dinámica desde el panel).
+- **Hosting**: Optimizado para Firebase App Hosting.
 
 ## ⚠️ Seguridad
 
-Este proyecto permite gestionar la configuración de Stripe desde el panel de administración en `/admin/dashboard/settings`. 
-
-**IMPORTANTE**: Los valores se guardan en `src/lib/settings-data.json`. Este archivo **está incluido en el `.gitignore`** para evitar que tus claves secretas se suban a GitHub. Al desplegar en un nuevo entorno, deberás introducir las claves manualmente a través del panel de administración.
+Este proyecto utiliza un sistema de persistencia local para las claves de Stripe en `src/lib/settings-data.json`.
+- **IMPORTANTE**: Este archivo está en el `.gitignore`. Nunca se subirá a GitHub.
+- Deberás configurar las claves manualmente en cada nuevo entorno de despliegue a través del panel de administración.
 
 ---
 © 2024 kfton - Todo empieza con kfton.
