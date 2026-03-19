@@ -1,0 +1,108 @@
+{
+  "dishesOfTheWeek": [
+    {
+      "name": "Tostada de Sobrasada y Miel",
+      "description": "Una combinación sorprendente y deliciosa. ¡Unidades limitadas!",
+      "price": "9,50"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Bebidas",
+      "subcategories": [
+        {
+          "name": "Cafés",
+          "items": [
+            { "name": "Doble Espresso", "price": "2,00" },
+            { "name": "Americano", "price": "2,30" },
+            { "name": "Cortado", "price": "2,40" },
+            { "name": "Café con Leche", "price": "2,70" },
+            { "name": "Cappuccino", "price": "2,70" },
+            { "name": "Flat White", "price": "3,00" },
+            { "name": "Latte", "price": "3,00" },
+            { "name": "Mocca", "price": "4,00" },
+            { "name": "Filtro Batch", "price": "3,50" },
+            { "name": "V60", "price": "5,00" },
+            { 
+              "name": "V60 Especial (China - Yunnan)", 
+              "price": "8,50", 
+              "description": "Proceso natural con notas a ciruela pasa, té negro y chocolate amargo. Cuerpo sedoso y acidez media-baja."
+            },
+            { "name": "Opción Café Natural Pacamara", "price": "-1,00" }
+          ]
+        },
+        {
+          "name": "Tés",
+          "items": [
+            { "name": "Matcha", "price": "3,00" },
+            { "name": "Matcha Latte", "price": "4,00" }
+          ]
+        },
+        {
+          "name": "Zumos Naturales",
+          "items": [
+            { "name": "Zumo de Naranja", "price": "4,00" }
+          ]
+        },
+        {
+          "name": "Cervezas y Vinos",
+          "items": [
+            { "name": "Estrella Galicia", "price": "2,00" },
+            { "name": "Vinos Naturales", "price": "Próximamente" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Comida",
+      "subcategories": [
+        {
+          "name": "Tostadas",
+          "items": [
+            { "name": "Tomate Casero", "price": "4,00" },
+            { "name": "Aguacate", "price": "6,00" },
+            { "name": "Catalina", "price": "8,60" },
+            { "name": "Jamón Cocido", "price": "6,00" },
+            { "name": "Extras:", "price": ""},
+            { "name": "Huevo", "price": "+2,00" },
+            { "name": "Panceta Ibérica", "price": "+2,50" },
+            { "name": "Cebo Ibérico 50%", "price": "+4,50" },
+            { "name": "Salmón Ahumado", "price": "+3,00" },
+            { "name": "Jamón Cocido (extra)", "price": "+2,00" }
+          ]
+        },
+        {
+            "name": "Sandwiches",
+            "items": [
+                { "name": "Kfton BLT", "price": "13,00", "description": "Lechuga, panceta, tomate, lemon mayo, pollo asado al limón." },
+                { "name": "Pollo y Brie", "price": "14,00", "description": "Pimiento en yemas curadas, brie, pollo asado al limón." },
+                { "name": "Salmón", "price": "14,00", "description": "Salmón, manzana, canónigos, queso crema con limón y eneldo." }
+            ]
+        },
+        {
+            "name": "Desayunos Completos",
+            "items": [
+                { "name": "Con Panceta Ibérica", "price": "9,00 - 13,00", "description": "Todos nuestros desayunos completos incluyen huevos, aguacate, tomate casero y pan de masa madre." },
+                { "name": "Con Salmón Ahumado", "price": "9,00 - 13,00" },
+                { "name": "Con Jamón Cocido", "price": "8,50 - 12,00" },
+                { "name": "Con Cerdo Ibérico", "price": "10,50 - 16,00" }
+            ]
+        },
+        {
+            "name": "Yogurt",
+            "items": [
+                { "name": "Yogurt con miel y nueces pecanas", "price": "5,50" },
+                { "name": "Yogurt con granola casera y compota de ciruela y fresa", "price": "8,50" }
+            ]
+        },
+        {
+            "name": "Dulces",
+            "items": [
+                { "name": "Banana Bread", "price": "4,00" },
+                { "name": "Galleta de Choco", "price": "4,00" }
+            ]
+        }
+      ]
+    }
+  ]
+}

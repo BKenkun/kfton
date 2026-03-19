@@ -1,0 +1,12 @@
+
+{
+  "schedule": [
+    { "day": "Miércoles", "hours": "7:30–15:30" },
+    { "day": "Jueves", "hours": "7:30–15:30" },
+    { "day": "Viernes", "hours": "7:30–15:30" },
+    { "day": "Sábado", "hours": "8:00–14:00" },
+    { "day": "Domingo", "hours": "8:00–14:00" },
+    { "day": "Lunes", "hours": "Cerrado" },
+    { "day": "Martes", "hours": "Cerrado" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "text": "<p>todo empieza con <span style=\"color: rgb(255, 56, 56);\">kfton</span></p>",
+  "position": "center-center",
+  "textSize": 64,
+  "backgroundType": "youtube",
+  "backgroundUrl": "j7rUThNFB6A",
+  "button": {
+    "enabled": false,
+    "text": "Ver más",
+    "href": "#",
+    "padding": 32
+  }
+}

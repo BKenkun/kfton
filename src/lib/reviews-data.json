@@ -1,0 +1,20 @@
+
+{
+  "reviews": [
+    {
+      "author": "Raquel b.g.",
+      "text": "El café riquísimo, el pan espectacular. Pedimos la tostada de aguacate y la de sobrasada y miel. Todo buenísimo y las chicas que nos atendieron encantadoras. Volveremos sin duda!",
+      "rating": 5
+    },
+    {
+      "author": "Aida Fernandez",
+      "text": "Un sitio chulísimo con terraza, donde se puede disfrutar de un buen desayuno, la comida es de calidad y tienen buen café de especialidad. Las trabajadoras son súper agradables.",
+      "rating": 5
+    },
+    {
+      "author": "Alicia Martínez",
+      "text": "Lugar muy tranquilo y acogedor, el personal muy atento y amable, el servicio es rápido. Calidad precio es bastante asequible. El café es de especialidad y está muy bueno.",
+      "rating": 5
+    }
+  ]
+}
