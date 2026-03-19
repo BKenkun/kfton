@@ -1,0 +1,28 @@
+
+{
+  "products": {
+    "default": {
+      "url": "https://picsum.photos/seed/kfton-coffee/600/800",
+      "width": 600,
+      "height": 800,
+      "alt": "Imagen de producto kfton",
+      "hint": "coffee product"
+    },
+    "thumbnail": {
+      "url": "https://picsum.photos/seed/kfton-thumb/100/100",
+      "width": 100,
+      "height": 100,
+      "alt": "Miniatura de producto",
+      "hint": "coffee thumbnail"
+    }
+  },
+  "hero": {
+    "fallback": {
+      "url": "https://picsum.photos/seed/kfton-hero/1920/1080",
+      "width": 1920,
+      "height": 1080,
+      "alt": "Fondo principal kfton",
+      "hint": "coffee shop"
+    }
+  }
+}

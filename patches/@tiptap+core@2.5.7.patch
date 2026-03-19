@@ -1,0 +1,86 @@
+diff --git a/node_modules/@tiptap/core/dist/tiptap-core.cjs b/node_modules/@tiptap/core/dist/tiptap-core.cjs
+index 213a890..a582496 100644
+--- a/node_modules/@tiptap/core/dist/tiptap-core.cjs
++++ b/node_modules/@tiptap/core/dist/tiptap-core.cjs
+@@ -1,6 +1,8 @@
+ 'use strict';
+ 
+ Object.defineProperty(exports, '__esModule', { value: true });
++
++const isSSR = typeof window === 'undefined';
+ 
+ var main = require('@tiptap/pm/state');
+ var view = require('@tiptap/pm/view');
+@@ -2329,7 +2331,7 @@
+       return this.options.content;
+     }
+     const { document } = this.options;
+-    if (this.options.content === null || this.options.content === '') {
++    if (this.options.content === null || this.options.content === '' || isSSR) {
+       return;
+     }
+     try {
+diff --git a/node_modules/@tiptap/core/dist/tiptap-core.esm.js b/node_modules/@tiptap/core/dist/tiptap-core.esm.js
+index 9e92ac5..506df17 100644
+--- a/node_modules/@tiptap/core/dist/tiptap-core.esm.js
++++ b/node_modules/@tiptap/core/dist/tiptap-core.esm.js
+@@ -1,4 +1,6 @@
+ import { Plugin, EditorState, TextSelection, PluginKey, Transaction } from '@tiptap/pm/state';
++
++const isSSR = typeof window === 'undefined';
+ import { EditorView } from '@tiptap/pm/view';
+ import { Schema, DOMParser, Slice, Fragment } from '@tiptap/pm/model';
+ import { StepMap } from '@tiptap/pm/transform';
+@@ -2313,7 +2315,7 @@
+       return this.options.content;
+     }
+     const { document } = this.options;
+-    if (this.options.content === null || this.options.content === '') {
++    if (this.options.content === null || this.options.content === '' || isSSR) {
+       return;
+     }
+     try {
+diff --git a/node_modules/@tiptap/core/dist/tiptap-core.umd.js b/node_modules/@tiptap/core/dist/tiptap-core.umd.js
+index f30f6df..c38ed3a 100644
+--- a/node_modules/@tiptap/core/dist/tiptap-core.umd.js
++++ b/node_modules/@tiptap/core/dist/tiptap-core.umd.js
+@@ -1,6 +1,8 @@
+ (function (global, factory) {
+   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@tiptap/pm/state'), require('@tiptap/pm/view'), require('@tiptap/pm/model'), require('@tiptap/pm/transform'), require('@tiptap/pm/commands'), require('@tiptap/pm/schema-list'), require('@tiptap/pm/dropcursor'), require('@tiptap/pm/gapcursor'), require('@tiptap/pm/keymap'), require('@tiptap/pm/history'), require('@tiptap/pm/collab')) :
+   typeof define === 'function' && define.amd ? define(['exports', '@tiptap/pm/state', '@tiptap/pm/view', '@tiptap/pm/model', '@tiptap/pm/transform', '@tiptap/pm/commands', '@tiptap/pm/schema-list', '@tiptap/pm/dropcursor', '@tiptap/pm/gapcursor', '@tiptap/pm/keymap', '@tiptap/pm/history', '@tiptap/pm/collab'], factory) :
+   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["@tiptap/core"] = {}, global.state, global.view, global.model, global.transform, global.commands, global.schemaList, global.dropcursor, global.gapcursor, global.keymap, global.history, global.collab));
+ })(this, (function (exports, main, view, model, transform, commands, schemaList, dropcursor, gapcursor, keymap, history, collab) { 'use strict';
+ 
++  const isSSR = typeof window === 'undefined';
++
+   const clipboardTextParser = (text, context) => {
+     const dom = document.createElement('div');
+     dom.innerHTML = text;
+@@ -2366,7 +2368,7 @@
+         return this.options.content;
+       }
+       const { document } = this.options;
+-      if (this.options.content === null || this.options.content === '') {
++      if (this.options.content === null || this.options.content === '' || isSSR) {
+         return;
+       }
+       try {
+diff --git a/node_modules/@tiptap/core/src/Editor.ts b/node_modules/@tiptap/core/src/Editor.ts
+index c6940a4..de62c5b 100644
+--- a/node_modules/@tiptap/core/src/Editor.ts
++++ b/node_modules/@tiptap/core/src/Editor.ts
+@@ -1,3 +1,5 @@
++const isSSR = typeof window === 'undefined'
++
+ import {
+   EditorState,
+   Plugin,
+@@ -483,7 +485,7 @@
+     }
+ 
+     const { document } = this.options
+-    if (this.options.content === null || this.options.content === '') {
++    if (this.options.content === null || this.options.content === '' || isSSR) {
+       return
+     }
+ 
